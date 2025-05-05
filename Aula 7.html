@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+
+    <form action="http://10.111.211.110:8088/exercicio3.php" method="POST">
+        <!-- Campo Prontuário -->
+        <label for="prontuario">Prontuário:</label>
+        <input type="text" id="prontuario" name="prontuario" required>
+        <br><br>
+
+        <!-- Campo Nome Completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- Campo E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Campo Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+</html>
