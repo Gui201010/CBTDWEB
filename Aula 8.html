@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://10.111.211.110:8088/aula8.php" method="POST">
+        <input type="hidden" name="prontuario" value="CB3038505">
+        <label for="nome_completo">Nome Completo:</label>
+        <input type="text" name="nome_completo" placeholder="Nome" required>
+        <br><br>
+        <label for="tel" >Celular:</label>
+        <input type="tel" name="celular" placeholder="(00) 00000-0000" required>
+        <br><br>
+        <label for="e-mail">E-mail:</label>
+        <input type="email" name="email" placeholder="Seu@email.com" required>
+        <br><br>
+        <label for="idade">Idade:</label> 
+        <input type="number" name="idade" placeholder="00" min="18" required>
+        <br><br>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" name="data" placeholder="data de nascimento" required>
+        <br><br>
+        <label for="agendamento">Data do agendamento:</label>
+        <input type="datetime-local" name="agendamento">
+        <br><br>
+        <label for="linkedin">Linkedin</label>
+        <input type="url" name="linkedin" placeholder="https://www.linkedin.com" required>
+        <br><br>
+        <label for="cor_preferida">Cor preferida:</label>
+        <input type="color" name="cor" value="#0066cc" required>
+        <br><br>
+        <input type="reset" value="Limpar"> 
+        <input type="submit" value="Enviar">        
+    </form>
+</body>
+</html>
