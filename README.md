@@ -1,1 +1,1 @@
-Códigos HTML realizados nas aulas de Desenvolvimento WEB
+Códigos HTML realizados para as aulas de Desenvolvimento WEB
