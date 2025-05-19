@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Simulado de Web 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#receita">Receita de macarrão a bolonhesa</a></li>
+                <li><a href="#ingredientes">Ingredientes do macarrão a bolonhesa</a></li>
+                <li><a href="#formulario">Formulario - Dúvidas sobre a receita</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="receita">
+            <h2>Receita de macarrão a bolonhesa</h2>
+            <ol>
+                <li>Cozer o macarrão em água salgada até ficar al dente.</li>
+                <li>Em uma panela, refogar a cebola e o alho picados em um pouco de óleo.</li>
+                <li>Adicionar a carne moída e cozinhar até dourar.</li>
+                <li>Incorporar o tomate pelado e temperar com sal e pimenta.</li>
+                <li>Deixar cozinhar por cerca de 15 minutos em fogo baixo.</li>
+                <li>Escorrer o macarrão e misturar com o molho bolonhesa.</li>
+                <li>Servir com queijo parmesão ralado por cima.</li>
+            </ol>
+        </section>
+
+        <section id="ingredientes">
+            <h2>Lista de produtos necessários para a receita. Não há a necessidade das borda, foram incluidas pelo
+                professor para facilitar a visualização.</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Onde comprar?</th>
+                        <th>Ingrediente</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="8">Mercado</td>
+                        <td>Macarrão</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Carne moída</td>
+                        <td>300g</td>
+                    </tr>
+                    <tr>
+                        <td>Cebola</td>
+                        <td>1 unidade</td>
+                    </tr>
+                    <tr>
+                        <td>Alho</td>
+                        <td>2 dentes</td>
+                    </tr>
+                    <tr>
+                        <td>Tomate pelado</td>
+                        <td>400g</td>
+                    </tr>
+                    <tr>
+                        <td>Queijo parmesão</td>
+                        <td>A gosto</td>
+                    </tr>
+                    <tr>
+                        <td>Sal</td>
+                        <td>A gosto</td>
+                    </tr>
+                    <tr>
+                        <td>Pimenta do reino</td>
+                        <td>A gosto</td>
+                </tbody>
+            </table>
+        </section>
+        <section id="formulario">
+            <h2>Formulario - Dúvidas sobre a receita</h2>
+            <p>Envie uma dúvida preenchendo o formulário abaixo e entraremos em contato o mais breve possível</p>
+            <form action="duvida.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome*" required><br>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Digite seu Telefone"><br>
+                <label for="email">E-mail:</label>
+                <input type="email" name="e-mail" id="email" placeholder="Digite seu E-mail*" required><br>
+                Como chegou ao nosso site?<input name="indicacao" type="radio" id="google" value="google"
+                    required><label for="google">Google</label> <input name="indicacao" id="redes_sociais" type="radio"
+                    value="redes_sociais"><label for="redes_sociais">Redes Sociais</label> <input name="indicacao"
+                    id="usuario" type="radio" value="usuario"><label for="usuario">Indicação de outro usuário</label>
+                <br>
+                <label for="duvida">Sua dúvida:</label>
+                <textarea name="duvida" id="duvida" required placeholder="Sua duvida" rows="4"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <h6>Desenvolvido por Paulo M</h6>
+    </footer>
+</body>
+</html>
